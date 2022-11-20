@@ -25,8 +25,10 @@
             <MenuItem Header="Выход" Click="Close"></MenuItem>
         </Menu>
         <TextBox x:Name="TextContent1" HorizontalAlignment="Left" Margin="88,114,0,0" TextWrapping="Wrap" Text="ab abab abab abababab abea" VerticalAlignment="Top" Width="120" Height="65" Cursor="Pen"/>
-        <TextBox x:Name="TextContent2" HorizontalAlignment="Left" Margin="558,114,0,0" TextWrapping="Wrap" Text="a.a aba aea" VerticalAlignment="Top" Width="120" Height="65" Cursor="Pen"/>
-        <ListBox x:Name="FindRes" Margin="213,53,242,52"/>
+        <TextBox x:Name="TextContent2" HorizontalAlignment="Left" Margin="558,114,0,0" TextWrapping="Wrap" Text="a.a aba aea" VerticalAlignment="Top" Width="120" Height="65" Cursor="Pen" BorderBrush="White"/>
+        <ListBox x:Name="FindRes" Margin="280,53,280,52"/>
+        <Label Content="Строка 1" HorizontalAlignment="Left" Margin="112,83,0,0" VerticalAlignment="Top" Foreground="Black"/>
+        <Label Content="Строка 2" HorizontalAlignment="Left" Margin="582,83,0,0" VerticalAlignment="Top" Foreground="Black"/>
 
 
     </Grid>
