@@ -55,7 +55,7 @@ namespace Prakt11
 
         private void FindSecond(object sender, RoutedEventArgs e)
         {
-            Regex regex = new Regex(@"\w*a[.]a\w*");
+            Regex regex = new Regex(@"\b(a[.]a)\b");
             string textcontent = TextContent2.Text;
             MatchCollection matches = regex.Matches(textcontent);
             object[] mas = new object[matches.Count];
