@@ -1,0 +1,33 @@
+﻿<Window x:Class="Prakt11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Prakt11"
+        mc:Ignorable="d"
+        Title="Практическая 11" Height="450" Width="800" Icon="/8152680.png" FontFamily="Segoe Print">
+    <Window.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+            <GradientStop Color="Pink" Offset="0.0" />
+            <GradientStop Color="LightSeaGreen" Offset="0.25" />
+            <GradientStop Color="Aquamarine" Offset="0.75" />
+            <GradientStop Color="LemonChiffon" Offset="1.0" />
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <Menu VerticalAlignment="Top" HorizontalAlignment="Center" FontFamily="Segoe Print" Cursor="Hand">
+            <MenuItem Header="Опции">
+                <MenuItem Header="Поиск по строке 1" Click="FindFirst"></MenuItem>
+                <MenuItem Header="Поиск по строке 2" Click="FindSecond"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Очистка" Click="Clear"></MenuItem>
+            <MenuItem Header="Задание" Click="Info"></MenuItem>
+            <MenuItem Header="Выход" Click="Close"></MenuItem>
+        </Menu>
+        <TextBox x:Name="TextContent1" HorizontalAlignment="Left" Margin="88,114,0,0" TextWrapping="Wrap" Text="ab abab abab abababab abea" VerticalAlignment="Top" Width="120" Height="65" Cursor="Pen"/>
+        <TextBox x:Name="TextContent2" HorizontalAlignment="Left" Margin="558,114,0,0" TextWrapping="Wrap" Text="a.a aba aea" VerticalAlignment="Top" Width="120" Height="65" Cursor="Pen"/>
+        <ListBox x:Name="FindRes" Margin="213,53,242,52"/>
+
+
+    </Grid>
+</Window>
